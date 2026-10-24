@@ -1,0 +1,28 @@
+// Reconstructed Roblox Android client (2.259.85876, c. early 2015)
+// Updated for Java 9+ compatibility: Android plugin 3.0.1 / Gradle 4.10.3
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://dl.google.com/dl/android/maven2' }
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'https://dl.google.com/dl/android/maven2' }
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

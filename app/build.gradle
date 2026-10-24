@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.roblox.roblox_client"
+        minSdkVersion 15
+        targetSdkVersion 15
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        packageRelease {
+            keyAlias 'seriously_do_not_delete_this_file'
+            keyPassword 'Sa4e63uCh4$robloxAndroid$'
+            storeFile file('../robloxAndroidPK_DO_NOT_DELETE')
+            storePassword 'Sa4e63uCh4$robloxAndroid$'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.packageRelease
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'build-data.properties'
+        exclude 'jsr305_annotations/**'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-v4:19.1.0'
+        }
+    }
+}
+
+dependencies {
+    implementation files('libs/support-v4-19.1.0.jar')
+    implementation ('com.google.android.gms:play-services-base:9.8.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation ('com.google.android.gms:play-services-analytics:9.8.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation ('com.google.android.gms:play-services-plus:9.8.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+    implementation 'org.aspectj:aspectjrt:1.8.7'
+
+    implementation files('libs/monkeytalk-agent.jar')
+    implementation files('libs/monkeytalk-core.jar')
+    implementation files('libs/monkeytalk-meta.jar')
+    implementation files('libs/monkeytalk-api.jar')
+}

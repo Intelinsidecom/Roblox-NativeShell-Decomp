@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen" />
+    <style name="LoginButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+    <style name="LoginEditTextTheme" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+    <style name="LoginCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+</resources>

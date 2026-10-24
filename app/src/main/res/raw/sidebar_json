@@ -1,0 +1,37 @@
+{
+	"items" : [
+		{ "image" : "sb_my_roblox", "label" : "MY ROBLOX", "details" : [
+			{ "label" : "HOME"       },
+			{ "label" : "PROFILE"    },
+			{ "label" : "CHARACTER"  },
+			{ "label" : "MESSAGES"   },
+			{ "label" : "INVENTORY"  },
+			{ "label" : "ECONOMY"    },
+			{ "label" : "SETS"       }
+		]},
+
+		{ "image" : "sb_games",   "label" : "GAMES"   },
+		{ "image" : "sb_catalog", "label" : "CATALOG" },
+		{ "image" : "sb_develop", "label" : "DEVELOP" },
+
+		{ "image" : "sb_purchase", "label" : "PURCHASE", "details" : [
+			{ "label" : "MEMBERSHIP" },
+			{ "label" : "ROBUX"      }
+		]},
+
+		{ "image" : "sb_community", "label" : "COMMUNITY", "details" : [
+			{ "label" : "GROUPS"     },
+			{ "label" : "FRIENDS"    },
+			{ "label" : "BLOG"       }
+		]},
+
+		{ "image" : "sb_forum", "label" : "FORUM" },
+
+		{ "image" : "sb_account", "label" : "ACCOUNT", "details" : [
+			{ "label" : "SETTINGS"   },
+			{ "label" : "HELP"       }
+		]},
+
+		{ "image" : "sb_indicator_none", "label" : "LOGOUT" }
+	]
+}
