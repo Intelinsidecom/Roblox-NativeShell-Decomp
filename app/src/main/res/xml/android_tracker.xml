@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="ga_sessionTimeout">300</integer>
-    <bool name="ga_autoActivityTracking">true</bool>
-    <screenName name="com.roblox.roblox_client.ActivityNativeMain">RobloxMobileAndroid ActivityNativeMain</screenName>
-    <screenName name="com.roblox.roblox_client.ActivityNativeSidebar">RobloxMobileAndroid ActivityNativeSidebar</screenName>
-    <screenName name="com.roblox.roblox_client.ActivityWebView">RobloxMobileAndroid ActivityWebView</screenName>
-    <screenName name="com.roblox.roblox_client.ActivityFragmentTest">RobloxMobileAndroid ActivityFragmentTest</screenName>
-    <screenName name="com.roblox.roblox_client.ActivityGlView">RobloxMobileAndroid ActivityGlView</screenName>
-    <screenName name="com.roblox.roblox_client.ActivityCurlTest">RobloxMobileAndroid ActivityCurlTest</screenName>
-    <string name="ga_trackingId">UA-51088233-1</string>
+    <integer name="ga_sessionTimeout">300
+    </integer>
+    <bool name="ga_autoActivityTracking">true
+    </bool>
+    <screenName name="com.roblox.roblox_client.ActivityNativeMain">RobloxMobileAndroid ActivityNativeMain
+    </screenName>
+    <screenName name="com.roblox.roblox_client.ActivityNativeSidebar">RobloxMobileAndroid ActivityNativeSidebar
+    </screenName>
+    <screenName name="com.roblox.roblox_client.ActivityWebView">RobloxMobileAndroid ActivityWebView
+    </screenName>
+    <screenName name="com.roblox.roblox_client.ActivityFragmentTest">RobloxMobileAndroid ActivityFragmentTest
+    </screenName>
+    <screenName name="com.roblox.roblox_client.ActivityGlView">RobloxMobileAndroid ActivityGlView
+    </screenName>
+    <screenName name="com.roblox.roblox_client.ActivityCurlTest">RobloxMobileAndroid ActivityCurlTest
+    </screenName>
+    <string name="ga_trackingId">UA-51088233-1
+    </string>
 </resources>

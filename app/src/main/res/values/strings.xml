@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
-    <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
     <string name="common_google_play_services_install_button">Get Google Play services</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
-    <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
     <string name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
     <string name="common_google_play_services_network_error_title">Network Error</string>
     <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
     <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
@@ -40,9 +40,9 @@
     <string name="AccountCreationFloodcheck">You have made too many accounts.</string>
     <string name="UnexpectedError">Sorry! An unexpected error occured: %s.</string>
     <string name="PasswordWrongAndroid">Password must contain 6-20 characters with at least 2 numbers.</string>
-    <string name="TermsLicensingPrivacy">"&lt;a href='http://www.roblox.com/info/terms-of-service'>Terms of Service&lt;/a>, &lt;a href='http://www.roblox.com/info/EULA.htm'>Licensing Agreement&lt;/a>, and &lt;a href='http://www.roblox.com/Info/Privacy.aspx?layout=null'>Privacy Policy&lt;/a>"</string>
+    <string name="TermsLicensingPrivacy">&lt;a href=\'http://www.roblox.com/info/terms-of-service\'&gt;Terms of Service&lt;/a&gt;, &lt;a href=\'http://www.roblox.com/info/EULA.htm\'&gt;Licensing Agreement&lt;/a&gt;, and &lt;a href=\'http://www.roblox.com/Info/Privacy.aspx?layout=null\'&gt;Privacy Policy&lt;/a&gt;</string>
     <string name="SearchWord">Search</string>
-    <string name="SignupFinePrintAndroid">"By tapping 'Sign up' above, you are agreeing to our &lt;a href='http://www.roblox.com/info/terms-of-service'>Terms of Service&lt;/a>, &lt;a href='http://www.roblox.com/info/EULA.htm'>Licensing Agreement&lt;/a>, and &lt;a href='http://www.roblox.com/Info/Privacy.aspx?layout=null'>Privacy Policy&lt;/a>. We will not share your information with third parties."</string>
+    <string name="SignupFinePrintAndroid">By tapping \'Sign up\' above, you are agreeing to our &lt;a href=\'http://www.roblox.com/info/terms-of-service\'&gt;Terms of Service&lt;/a&gt;, &lt;a href=\'http://www.roblox.com/info/EULA.htm\'&gt;Licensing Agreement&lt;/a&gt;, and &lt;a href=\'http://www.roblox.com/Info/Privacy.aspx?layout=null\'&gt;Privacy Policy&lt;/a&gt;. We will not share your information with third parties.</string>
     <string name="LoggedOut">You have been logged out.</string>
     <string name="UsernameWord">Username</string>
     <string name="PasswordWord">Password</string>
@@ -59,7 +59,7 @@
     <string name="BirthdayRequirements">Select Your Birthday</string>
     <string name="EmailWord">Email</string>
     <string name="EmailRequirements">(optional)</string>
-    <string name="EmailRequirementsUnder13">"(parent's email)"</string>
+    <string name="EmailRequirementsUnder13">(parent\'s email)</string>
     <string name="SignupWord">Sign Up</string>
     <string name="ChooseOne">Choose one</string>
     <string name="GenderBoy">Boy</string>
@@ -68,7 +68,7 @@
     <string name="EntryIncorrectBody">One or more of the fields are incorrect or empty.</string>
     <string name="VerifyWord">Verify</string>
     <string name="VerifyRequirements">Retype Password</string>
-    <string name="SignupFinePrint">"By tapping 'Sign up' above, you are agreeing to our &amp;lt;a href='http://www.roblox.com/info/terms-of-service'&amp;gt;Terms of Service&amp;lt;/a&amp;gt;, &amp;lt;a href='http://www.roblox.com/info/EULA.htm'&amp;gt;Licensing Agreement&amp;lt;/a&amp;gt;, and &amp;lt;a href='http://www.roblox.com/Info/Privacy.aspx?layout=null'&amp;gt;Privacy Policy&amp;lt;/a&amp;gt;. We will not share your information with third parties."</string>
+    <string name="SignupFinePrint">By tapping \'Sign up\' above, you are agreeing to our &amp;lt;a href=\'http://www.roblox.com/info/terms-of-service\'&amp;gt;Terms of Service&amp;lt;/a&amp;gt;, &amp;lt;a href=\'http://www.roblox.com/info/EULA.htm\'&amp;gt;Licensing Agreement&amp;lt;/a&amp;gt;, and &amp;lt;a href=\'http://www.roblox.com/Info/Privacy.aspx?layout=null\'&amp;gt;Privacy Policy&amp;lt;/a&amp;gt;. We will not share your information with third parties.</string>
     <string name="DoneWord">Done</string>
     <string name="NextWord">Next</string>
     <string name="SelectBirthday">Select Birthday</string>
@@ -79,7 +79,7 @@
     <string name="FieldsIncomplete">Not all required fields are filled</string>
     <string name="NoSignupUsernameError">No username was entered, please enter a username.</string>
     <string name="NoSignupPasswordError">No password specified, please enter a password.</string>
-    <string name="NoSignupVerifyPasswordError">"Password was not verified, please enter password in 'Verify' field."</string>
+    <string name="NoSignupVerifyPasswordError">Password was not verified, please enter password in \'Verify\' field.</string>
     <string name="NoSignupBirthdayError">No birthday specified, please select a birthday.</string>
     <string name="NoSignupGenderError">No gender specified, please select a gender.</string>
     <string name="PasswordNoMatch">Passwords do not match. Please retype your password.</string>
@@ -107,7 +107,7 @@
     <string name="LaunchGame">Launching Game</string>
     <string name="EndingGame">Game Closing</string>
     <string name="AboutWord">About</string>
-    <string name="LegalText">"ROBLOX, 'Online Building Toy', characters, logos, names, and all related indicia are trademarks of ROBLOX Corporation ©2013. US Patents 7,874,921. Patents pending. Contact us at info@roblox.com"</string>
+    <string name="LegalText">ROBLOX, \'Online Building Toy\', characters, logos, names, and all related indicia are trademarks of ROBLOX Corporation ©2013. US Patents 7,874,921. Patents pending. Contact us at info@roblox.com</string>
     <string name="TermsOfService">Terms of Service</string>
     <string name="LicensingAgreement">Licensing Agreement</string>
     <string name="PrivacyPolicy">Privacy Policy</string>
@@ -119,7 +119,7 @@
     <string name="IgnoreButtonText">Ignore</string>
     <string name="UpgradeButtonText">Upgrade</string>
     <string name="GeneralGameStartError">There was an error starting this game.</string>
-    <string name="MemoryError">"We're sorry, this place uses too many parts for your device"</string>
+    <string name="MemoryError">We\'re sorry, this place uses too many parts for your device</string>
     <string name="ConnectionError">ROBLOX requires Internet connection</string>
     <string name="ConnectionErrorGameEnded">Cannot join this game because it has ended</string>
     <string name="ConnectionErrorGameFull">Cannot join this game because it is full</string>
@@ -132,7 +132,7 @@
     <string name="LogoutWord">Logout</string>
     <string name="RobloxWord">ROBLOX</string>
     <string name="OkWord">Ok</string>
-    <string name="WarnPlaceIsNotIdeal">"We're sorry, this place may not play well on your device because:"</string>
+    <string name="WarnPlaceIsNotIdeal">We\'re sorry, this place may not play well on your device because:</string>
     <string name="WarnTooManyParts" formatted="false">This place has %d parts (%d is recommended)</string>
     <string name="CannotMakePurchase">We are sorry, you cannot make purchases at this time. If this problem persists contact info@roblox.com</string>
     <string name="HavePendingTransactionError">You already have pending transactions, please try again after some time. You may need to restart your device. If this problem persists contact info@roblox.com</string>
@@ -149,7 +149,7 @@
     <string name="PurchaseSuccessful">Purchase successful, it may take up to 5 minutes to be reflected in your account</string>
     <string name="PurchasedFailed">Purchase failed, please try again</string>
     <string name="WaitForAnotherRobuxPurchase">Please wait for some time before making Robux purchase</string>
-    <string name="WaitForAnotherBCPurchase">"Please wait for some time before making Builder's Club purchase"</string>
+    <string name="WaitForAnotherBCPurchase">Please wait for some time before making Builder\'s Club purchase</string>
     <string name="WaitForAnotherCatalogPurchase">Please wait for some time before making Catalog purchase</string>
     <string name="RatingString">If you enjoy using ROBLOX, would you please rate it? It wont take more than a minute. If you are having issues or problems, please email support at support@roblox.com.</string>
     <string name="RatingTitle">Rate ROBLOX</string>

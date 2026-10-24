@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.roblox.roblox_client">
-    <supports-screens android:largeScreens="true" android:normalScreens="false" android:requiresSmallestWidthDp="900" android:smallScreens="false" android:xlargeScreens="true"/>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.roblox.roblox_client">
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="false"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:requiresSmallestWidthDp="900"/>
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
@@ -9,47 +21,107 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
-    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
     <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture"/>
     <supports-gl-texture android:name="GL_OES_compressed_paletted_texture"/>
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/RobloxWord" android:largeHeap="true" android:name="com.roblox.roblox_client.RobloxApplication" android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <meta-data android:name="com.crashlytics.ApiKey" android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7"/>
-        <service android:exported="false" android:name=".RobloxService" android:process=":service" android:stopWithTask="false"/>
-        <activity android:allowTaskReparenting="false" android:label="@string/RobloxWord" android:launchMode="singleInstance" android:multiprocess="false" android:name="com.roblox.roblox_client.ActivityNativeMain" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan">
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/RobloxWord"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.roblox.roblox_client.RobloxApplication"
+        android:allowBackup="true"
+        android:largeHeap="true">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="7991889011d53be5ccf9f6f42d9a1ea05a702eb7"/>
+        <service
+            android:name="com.roblox.roblox_client.RobloxService"
+            android:exported="false"
+            android:process=":service"
+            android:stopWithTask="false"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityNativeMain"
+            android:multiprocess="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:allowTaskReparenting="false"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:allowTaskReparenting="false" android:label="@string/RobloxWord" android:launchMode="singleInstance" android:multiprocess="false" android:name="com.roblox.roblox_client.ActivityNativeSidebar" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan">
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityNativeSidebar"
+            android:multiprocess="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:allowTaskReparenting="false"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:allowTaskReparenting="false" android:label="@string/RobloxWord" android:launchMode="singleInstance" android:multiprocess="false" android:name="com.roblox.roblox_client.ActivityWebView" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.roblox.roblox_client.ActivityNativeMain"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityWebView"
+            android:multiprocess="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:allowTaskReparenting="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.roblox.roblox_client.ActivityNativeMain"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/RobloxWord" android:name="com.roblox.roblox_client.ActivityFragmentTest" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme">
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityFragmentTest"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:allowTaskReparenting="false" android:label="@string/RobloxWord" android:launchMode="singleInstance" android:multiprocess="false" android:name="com.roblox.roblox_client.ActivityGlView" android:process=":glview" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.roblox.roblox_client.ActivityWebView"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityGlView"
+            android:process=":glview"
+            android:multiprocess="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:allowTaskReparenting="false"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.roblox.roblox_client.ActivityWebView"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/RobloxWord" android:name="com.roblox.roblox_client.ActivityCurlTest" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme">
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/RobloxWord"
+            android:name="com.roblox.roblox_client.ActivityCurlTest"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>

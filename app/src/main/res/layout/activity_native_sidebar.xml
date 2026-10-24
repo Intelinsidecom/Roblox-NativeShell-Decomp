@@ -1,44 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/activity_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:orientation="vertical" android:background="@drawable/coverpagetablet03" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" android:layout_weight="0.0" />
-            <View android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.6" />
-            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="0.85">
-                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.7">
-                    <EditText android:id="@id/username" android:layout_height="0.0dip" android:text="@string/UsernameWord" android:layout_weight="1.0" android:imeOptions="actionNext" android:onClick="onNop" style="@style/LoginEditTextTheme" />
-                    <EditText android:id="@id/password" android:layout_height="0.0dip" android:text="@string/PasswordWord" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionGo" android:onClick="onNop" style="@style/LoginEditTextTheme" />
-                    <Button android:id="@id/login" android:background="@color/login_button_green" android:layout_height="0.0dip" android:text="@string/LoginWord" android:layout_weight="1.0" android:onClick="onLogin" style="@style/LoginButtonTheme" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/coverpagetablet03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="0"/>
+            <View
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.6"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.85">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7">
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_height="0dp"
+                        android:text="@string/UsernameWord"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:onClick="onNop"
+                        style="@style/LoginEditTextTheme"/>
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_height="0dp"
+                        android:text="@string/PasswordWord"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionGo"
+                        android:onClick="onNop"
+                        style="@style/LoginEditTextTheme"/>
+                    <Button
+                        android:id="@+id/login"
+                        android:background="@color/login_button_green"
+                        android:layout_height="0dp"
+                        android:text="@string/LoginWord"
+                        android:layout_weight="1"
+                        android:onClick="onLogin"
+                        style="@style/LoginButtonTheme"/>
                 </LinearLayout>
-                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
             </LinearLayout>
-            <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.1"/>
         </LinearLayout>
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/black" android:dividerHeight="2.0px">
-            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
-            <LinearLayout android:orientation="horizontal" android:background="@color/native_sidebar_top_row" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <ImageView android:gravity="center" android:id="@id/hamburger" android:paddingLeft="20.0dip" android:layout_width="80.0dip" android:layout_height="50.0dip" android:src="@drawable/hamburger" android:scaleType="fitXY" android:layout_weight="0.0" android:contentDescription="@string/empty" />
-                <ImageView android:gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="200.0dip" android:layout_height="40.0dip" android:src="@drawable/roblox_logo" android:scaleType="fitXY" android:layout_weight="0.0" android:contentDescription="@string/empty" />
-                <EditText android:textSize="20.0sp" android:gravity="left" android:id="@id/search" android:layout_width="350.0dip" android:layout_height="wrap_content" android:text="@string/SearchWord" android:layout_weight="0.0" android:inputType="text" android:imeOptions="actionGo" android:contentDescription="@string/empty" />
-                <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_weight="0.0">
-                    <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/robux_symbol2x" android:contentDescription="@string/empty" />
-                    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/robux_balance" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_number" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/black"
+            android:dividerHeight="2px">
+            <View
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/native_sidebar_top_row"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:gravity="center"
+                    android:id="@+id/hamburger"
+                    android:paddingLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/hamburger"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/empty"/>
+                <ImageView
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/roblox_logo"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/empty"/>
+                <EditText
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:id="@+id/search"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SearchWord"
+                    android:layout_weight="0"
+                    android:inputType="text"
+                    android:imeOptions="actionGo"
+                    android:contentDescription="@string/empty"/>
+                <View
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/robux_symbol2x"
+                        android:contentDescription="@string/empty"/>
+                    <TextView
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:id="@+id/robux_balance"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placeholder_number"/>
                 </LinearLayout>
-                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_weight="0.0">
-                    <ImageView android:gravity="center" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tix_symbol2x" android:contentDescription="@string/empty" />
-                    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/tickets_balance" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_number" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tix_symbol2x"
+                        android:contentDescription="@string/empty"/>
+                    <TextView
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:id="@+id/tickets_balance"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placeholder_number"/>
                 </LinearLayout>
-                <TextView android:textSize="30.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/username_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/UsernameWord" android:layout_weight="0.0" />
-                <ImageView android:gravity="center" android:layout_gravity="right" android:id="@id/thumbnail_url" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="80.0dip" android:layout_height="40.0dip" android:src="@drawable/crate" android:scaleType="fitXY" android:layout_weight="0.0" android:contentDescription="@string/empty" />
-                <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/more" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" />
+                <TextView
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/username_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/UsernameWord"
+                    android:layout_weight="0"/>
+                <ImageView
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:id="@+id/thumbnail_url"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/crate"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/empty"/>
+                <TextView
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:id="@+id/more"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"/>
             </LinearLayout>
-            <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="2.0px" />
-            <android.support.v4.widget.DrawerLayout android:orientation="horizontal" android:id="@id/sidebar_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:showDividers="middle">
-                <FrameLayout android:id="@id/page_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-                <com.roblox.roblox_client.SidebarExpandableListView android:layout_gravity="start" android:id="@id/sidebar" android:background="@color/native_sidebar_background" android:layout_width="300.0dip" android:layout_height="fill_parent" android:groupIndicator="@android:color/transparent" android:divider="@android:color/black" android:dividerHeight="2.0px" />
+            <View
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="2px"/>
+            <android.support.v4.widget.DrawerLayout
+                android:orientation="horizontal"
+                android:id="@+id/sidebar_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:showDividers="middle">
+                <FrameLayout
+                    android:id="@+id/page_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.roblox.roblox_client.SidebarExpandableListView
+                    android:layout_gravity="start"
+                    android:id="@+id/sidebar"
+                    android:background="@color/native_sidebar_background"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:groupIndicator="@android:color/transparent"
+                    android:divider="@android:color/black"
+                    android:dividerHeight="2px"/>
             </android.support.v4.widget.DrawerLayout>
         </LinearLayout>
     </ViewFlipper>

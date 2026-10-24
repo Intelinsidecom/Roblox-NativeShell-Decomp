@@ -19,7 +19,7 @@
     <string name="common_google_play_services_unsupported_date_text">Seadme kuupäev paistab olevat vale. Kontrollige seadme kuupäeva.</string>
     <string name="common_google_play_services_update_button">Värskenda</string>
     <string name="common_signin_button_text">Logi sisse</string>
-    <string name="common_signin_button_text_long">"Logi sisse Google'iga"</string>
+    <string name="common_signin_button_text_long">Logi sisse Google\'iga</string>
     <string name="auth_client_using_bad_version_title">Rakendus püüdis kasutada Google Play teenuste sobimatut versiooni.</string>
     <string name="auth_client_needs_enabling_title">Rakenduse kasutamiseks peavad olema lubatud Google Play teenused.</string>
     <string name="auth_client_needs_installation_title">Rakenduse kasutamiseks peavad olema installitud Google Play teenused.</string>
